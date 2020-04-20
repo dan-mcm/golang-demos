@@ -1,0 +1,74 @@
+# Web Scraping with Colly & Go
+
+Daniel McMahon
+April 2020
+
+Software Engineer
+
+Team Express | Pillar 2 | Profile & Personalisation
+
+daniel.mcmahon@zalando.ie
+
+
+
+
+## Who am I?
+
+Time @ Zalando
+
+- 2017 - Intern / Team Wolves - FrontEnd R&D Work - React / JavaScript
+- 2018 - Team Machina / Team ExMachina - APIs/Backend Webscraper - Scala/Akka/Play
+- 2019 - Team ExMachina / Team Express - Kubernetes / Dev Ops / AWS
+- 2020 - Team Express
+
+Exposure to Golang
+
+- Team Wolves Project - [Heimdall](linkneeded)
+- Kubernetes - [k9s](https://github.com/derailed/k9s)
+- Pet Projects - [Lucas](https://github.com/dan-mcm/lucas)
+
+## Meet Lucas!
+
+.image images/lucas.png 400 600
+
+- [Github Repo](https://github.com/dan-mcm/lucas)
+- [Adorable Youtube Spider](https://www.youtube.com/user/joshuaslice)
+
+## Title of Slide or Section (must begin with ##)
+
+Some Text
+
+### Subsection {#anchor}
+
+- bullets
+- more bullets
+- a bullet continued
+  on the next line
+
+#### Sub-subsection
+
+Some More text
+
+	Preformatted text (code block)
+	is indented (by one tab, or four spaces)
+
+Further Text, including command invocations.
+
+
+
+
+
+
+## Section 2: Example formatting {#fmt}
+
+Formatting:
+
+_italic_
+// A comment that is completely ignored.
+: Speaker notes.
+**bold**
+`program`
+Markup—_especially italic text_—can easily be overused.
+_Why use scoped\_ptr_? Use plain **\*ptr** instead.
+
+Visit [the Go home page](https://golang.org/).
