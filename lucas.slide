@@ -5,10 +5,9 @@ April 2020
 
 Software Engineer
 
-Team Express | Pillar 2 | Profile & Personalisation
+Team Express | Pillar 2 - Profile & Personalisation | Digital Experience
 
 daniel.mcmahon@zalando.ie
-
 
 
 
@@ -27,48 +26,87 @@ Exposure to Golang
 - Kubernetes - [k9s](https://github.com/derailed/k9s)
 - Pet Projects - [Lucas](https://github.com/dan-mcm/lucas)
 
-## Meet Lucas!
+## Meet Lucas
 
 .image images/lucas.png 400 600
 
 - [Github Repo](https://github.com/dan-mcm/lucas)
 - [Adorable Youtube Spider](https://www.youtube.com/user/joshuaslice)
 
-## Title of Slide or Section (must begin with ##)
+## Packages Used
 
-Some Text
+Scraping
+- [Colly](https://github.com/gocolly/colly) - [Official Docs](http://go-colly.org/)
 
-### Subsection {#anchor}
+DB
+- [pq](https://github.com/lib/pq) - [Official Docs](https://godoc.org/github.com/lib/pq)
 
-- bullets
-- more bullets
-- a bullet continued
-  on the next line
+Utils
+- [Color](github.com/fatih/color) - [Official Docs](https://godoc.org/github.com/fatih/color)
+- [GoDotEnv](https://github.com/joho/godotenv) - [Official Docs](https://godoc.org/github.com/joho/godotenv)
 
-#### Sub-subsection
+## The Reasoning
 
-Some More text
+Getting spammed with adverts from [floryday](https://www.floryday.com/) despite never having heard of them.
 
-	Preformatted text (code block)
-	is indented (by one tab, or four spaces)
+Having previously worked on JS applications & some web scrapping with [Arachne]() I was curious to build something myself,
+and what better way to get to know a new language then experimenting.
 
-Further Text, including command invocations.
+.image images/floryday.png 300 500
+
+## Figuring out the Site Structure
+
+- Initial Page Exploration
+
+- Spotting URL Patterns with 'Dresses'
+  - https://www.floryday.com/Dresses-r9872/
+  - https://www.floryday.com/Dresses-r9872/p2/
+  - https://www.floryday.com/Dresses-r9872/p5/
+
+## Figuring out the HTML Structure
+
+- Spotting HTML Patterns of PDPs
+
+.image images/pdp1.png
+
+## Figuring out the HTML Structure (cont'd)
+
+- The 'valuable' data
+
+.image images/pdp2.png
+
+- Working on one product type as a basis but... logic could be abstracted to others
+
+## Code Overview
+
+Local DB Setup
+- Postgres
+- Docker
+
+Main Package
+- Lucas.go
+- Models.go
+- db.go
+
+Env Variables
+- .env
+
+Dependencies:
+- mod.go
 
 
 
 
+## Next Steps
 
+- Finish Parsing Data for 'dresses'
+  - Add tests and handle errors
+- Try a different product
+  - Require new structs for each product type
+  - Potential DB schema update
+- Currently restricted in performance
+  - Explore goroutines for parallelisation
+  - Consider scheduling as cronjob to run regularly
+- Could use DB data for visualisations & insights
 
-## Section 2: Example formatting {#fmt}
-
-Formatting:
-
-_italic_
-// A comment that is completely ignored.
-: Speaker notes.
-**bold**
-`program`
-Markup—_especially italic text_—can easily be overused.
-_Why use scoped\_ptr_? Use plain **\*ptr** instead.
-
-Visit [the Go home page](https://golang.org/).
+Key focus: keep having fun while exploring Go!
