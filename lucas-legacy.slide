@@ -1,13 +1,14 @@
 # Web Scraping with Colly & Go
+Web Scraping with Colly & Go
 
 Daniel McMahon
-April 2020
 
 Software Engineer
-
 Team Express | Pillar 2 - Profile & Personalisation | Digital Experience
 
-## Who am I?
+April 2020
+
+* Who am I?
 
 Time @ Zalando
 
@@ -16,34 +17,33 @@ Time @ Zalando
 - 2019 - Team ExMachina / Team Express - Kubernetes / Dev Ops / AWS
 - 2020 - Team Express
 
-Exposure to Golang
+* Exposure to Golang
 
-- Team Wolves Project - [Heimdall](github.bus.zalan.do/exmachina/heimdall)
-- Kubernetes - [k9s](github.com/derailed/k9s)
-- Pet Projects - [Lucas](github.com/dan-mcm/lucas)
+- Team Wolves - [[https://github.bus.zalan.do/exmachina/heimdall][Heimdall]]
+- Kubernetes - [[https://github.com/derailed/k9s][k9s]]
+- Pet Projects - [[https://github.com/dan-mcm/lucas][Lucas]]
 
-## Meet Lucas
+* Meet Lucas
 
 .image images/lucas.png 400 600
 
-- [Github Repo](github.com/dan-mcm/lucas)
-- [Adorable Youtube Spider](www.youtube.com/user/joshuaslice)
-- [Public Lucas Article](dev.to/dan_mcm_/lucas---a-webscraper-in-go-3jkc)
-daniel.mcmahon@zalando.ie
+- [[https://github.com/dan-mcm/lucas][Github Repo]]
+- [[https://www.youtube.com/user/joshuaslice][Adorable Youtube Spider]]
+- [[https://dev.to/dan_mcm_/lucas---a-webscraper-in-go-3jkc][Public Lucas Article]]
 
-## Packages Used
+* Packages Used
 
 Scraping
-- [Colly](github.com/gocolly/colly) - [Official Docs](go-colly.org/)
+- [[https://github.com/gocolly/colly][Colly]] - [[http://go-colly.org/][Official Docs]]
 
 DB
-- [pq](github.com/lib/pq) - [Official Docs](godoc.org/github.com/lib/pq)
+- [[https://github.com/lib/pq][pq]] - [[https://godoc.org/github.com/lib/pq][Official Docs]]
 
 Utils
-- [Color](github.com/fatih/color) - [Official Docs](godoc.org/github.com/fatih/color)
-- [GoDotEnv](github.com/joho/godotenv) - [Official Docs](godoc.org/github.com/joho/godotenv)
+- [[https://github.com/fatih/color][Color]] - [[https://godoc.org/github.com/fatih/color][Official Docs]]
+- [[https://github.com/joho/godotenv][GoDotEnv]] - [[https://godoc.org/github.com/joho/godotenv][Official Docs]]
 
-## The Reasoning
+* The Reasoning
 
 Getting spammed with adverts from [floryday](www.floryday.com/) despite never having heard of them.
 
@@ -52,7 +52,7 @@ and what better way to get to know a new language then experimenting.
 
 .image images/floryday.png 300 500
 
-## Figuring out the Site Structure
+* Figuring out the Site Structure
 
 - Initial Page Exploration
 
@@ -61,13 +61,13 @@ and what better way to get to know a new language then experimenting.
   - www.floryday.com/Dresses-r9872/p2/
   - www.floryday.com/Dresses-r9872/p5/
 
-## Figuring out the HTML Structure
+* Figuring out the HTML Structure
 
 - Spotting HTML Patterns of PDPs
 
 .image images/pdp1.png
 
-## Figuring out the HTML Structure (cont'd)
+* Figuring out the HTML Structure (cont'd)
 
 - The 'valuable' data
 
@@ -75,7 +75,7 @@ and what better way to get to know a new language then experimenting.
 
 - Working on one product type as a basis but... logic could be abstracted to others
 
-## Code Overview
+* Code Overview
 
 Local DB Setup
 - Postgres
@@ -92,7 +92,7 @@ Env Variables
 Dependencies:
 - mod.go
 
-## Next Steps
+* Next Steps
 
 - Finish Parsing Data for 'dresses'
   - Add tests and handle errors
@@ -103,5 +103,3 @@ Dependencies:
   - Explore goroutines for parallelisation
   - Consider scheduling as cronjob to run regularly
 - Could use DB data for visualisations & insights
-
-Key focus - keep having fun while exploring Go!
